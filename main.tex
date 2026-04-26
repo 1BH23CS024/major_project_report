@@ -1,0 +1,58 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage[backend=biber, style=ieee]{biblatex}
+\usepackage[top=0.75in, bottom=0.75in, left=1.25in, right=1in, includehead, headheight=15pt]{geometry}
+\usepackage{etoolbox, fancyhdr, fontspec, setspace, titlesec}
+\usepackage{lipsum}
+
+% import references
+\addbibresource{references.bib}
+
+% set header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{12pt}{0em}\textbf{VeerDristhi: Lightweight Combat Vision System}}
+\fancyhead[R]{\fontsize{12pt}{0em}\textbf{2025--2026}}
+\fancyfoot[L]{\fontsize{12pt}{0em}\textbf{Dept. of CSE, Bangalore Technological Institute, Bengaluru}}
+\fancyfoot[R]{\fontsize{12pt}{0em}\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% adjust text formatting
+\onehalfspacing
+\setlength{\headsep}{12pt}
+\setlength{\footskip}{24pt}
+\setlength{\parindent}{0em}
+\setmainfont{Times New Roman}
+
+% adjust heading formatting
+\titleformat{\chapter}[display]
+  {}
+  {\fontsize{14pt}{0em}\selectfont\bfseries\chaptername\ \thechapter}
+  {0em}
+  {\centering \fontsize{16pt}{0em}\selectfont\bfseries}
+  
+  \titleformat{\section}
+  {\fontsize{14pt}{0em}\selectfont\bfseries}
+  {\thesection}
+  {1em}
+  {}
+  
+  \titleformat{\subsection}
+  {\fontsize{12pt}{0em}\selectfont\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+ 
+% adjust chapter spacing 
+\titlespacing{\chapter}{0em}{-12pt}{12pt}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+% document content
+\begin{document}
+
+\tableofcontents
+
+\include{chapters/introduction}
+
+\end{document}
