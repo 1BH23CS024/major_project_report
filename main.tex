@@ -2,15 +2,18 @@
 
 \usepackage[backend=biber, style=ieee]{biblatex}
 \usepackage[top=0.75in, bottom=0.75in, left=1.25in, right=1in, includehead, headheight=15pt]{geometry}
-\usepackage{etoolbox, fancyhdr, fontspec, setspace, titlesec}
+\usepackage{booktabs, caption, etoolbox, fancyhdr, fontspec, setspace, titlesec}
 
 % import references
 \addbibresource{references.bib}
 
+% adjust caption spacing
+\captionsetup[table]{skip=12pt}
+
 % set header and footer
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\fontsize{12pt}{0em}\textbf{VeerDristhi: Lightweight Combat Vision System}}
+\fancyhead[L]{\fontsize{12pt}{0em}\textbf{VeerDrishti: Lightweight Combat Vision System}}
 \fancyhead[R]{\fontsize{12pt}{0em}\textbf{2025--2026}}
 \fancyfoot[L]{\fontsize{12pt}{0em}\textbf{Dept. of CSE, Bangalore Technological Institute, Bengaluru}}
 \fancyfoot[R]{\fontsize{12pt}{0em}\textbf{\thepage}}
@@ -53,5 +56,10 @@
 \tableofcontents
 
 \include{chapters/introduction}
+\include{chapters/literature_review}
+\include{chapters/requirements_analysis}
+\include{chapters/system_design}
+\include{chapters/scheduling}
+\include{chapters/conclusion}
 
 \end{document}
