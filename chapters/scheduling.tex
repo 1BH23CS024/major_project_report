@@ -1,0 +1,35 @@
+\chapter{Scheduling}
+
+\begin{figure}[h]
+    \centering
+
+    \begin{ganttchart}[
+            hgrid,
+            vgrid,
+            bar/.style={fill=gray, draw=black, rounded corners=2pt},
+            x unit=0.56\linewidth/16,
+            title height=1
+        ]{1}{20}
+
+        \gantttitle{January}{4}
+        \gantttitle{February}{4}
+        \gantttitle{March}{4}
+        \gantttitle{April}{4}
+        \gantttitle{May}{4} \\
+
+        \ganttbar{Literature Survey}{3}{5} \\
+        \ganttbar{Base Paper Selection}{5}{5} \\
+        \ganttbar{Review 0}{6}{6} \\
+        \ganttbar{Add'l Paper Selection}{7}{9} \\
+        \ganttbar{Review 1}{10}{10} \\
+        \ganttbar{Add'l Paper Selection}{11}{15} \\
+        \ganttbar{Report Drafting}{14}{15} \\
+        \ganttbar{Report Finalization}{15}{16} \\
+        \ganttbar{Review 2}{16}{16} \\
+        \ganttbar{Report Submission}{17}{17}
+
+    \end{ganttchart}
+
+    \caption{Gantt Chart for Major Project Phase-1}
+
+\end{figure}

@@ -2,13 +2,16 @@
 
 \usepackage[backend=biber, style=ieee]{biblatex}
 \usepackage[top=0.75in, bottom=0.75in, left=1.25in, right=1in, includehead, headheight=15pt]{geometry}
-\usepackage{booktabs, caption, etoolbox, fancyhdr, fontspec, setspace, titlesec}
+\usepackage{array, booktabs, caption, enumitem, etoolbox, fancyhdr, fontspec, graphicx, longtable, pgfgantt, setspace, titlesec}
 
 % import references
 \addbibresource{references.bib}
 
 % adjust caption spacing
 \captionsetup[table]{skip=12pt}
+
+% enumerate with roman numerals
+\setlist[enumerate]{label=\roman*.}
 
 % set header and footer
 \pagestyle{fancy}
@@ -41,7 +44,7 @@
   {}
   
   \titleformat{\subsection}
-  {\fontsize{14pt}{0em}\selectfont\bfseries}
+  {\fontsize{14pt}{14pt}\selectfont\bfseries}
   {\thesubsection}
   {1em}
   {}
@@ -61,5 +64,7 @@
 \include{chapters/system_design}
 \include{chapters/scheduling}
 \include{chapters/conclusion}
+
+\printbibliography[heading=bibnumbered]
 
 \end{document}
