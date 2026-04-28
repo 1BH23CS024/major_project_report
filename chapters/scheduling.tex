@@ -1,13 +1,12 @@
-\chapter{Scheduling}
+\chapter{SCHEDULING}
 
+\section{Gantt Chart}
 \begin{figure}[h]
     \centering
-
     \begin{ganttchart}[
             hgrid,
             vgrid,
-            bar/.style={fill=gray, draw=black, rounded corners=2pt},
-            x unit=0.56\linewidth/16,
+            x unit=0.57\linewidth/16,
             title height=1
         ]{1}{20}
 
@@ -17,19 +16,34 @@
         \gantttitle{April}{4}
         \gantttitle{May}{4} \\
 
-        \ganttbar{Literature Survey}{3}{5} \\
-        \ganttbar{Base Paper Selection}{5}{5} \\
-        \ganttbar{Review 0}{6}{6} \\
-        \ganttbar{Add'l Paper Selection}{7}{9} \\
-        \ganttbar{Review 1}{10}{10} \\
-        \ganttbar{Add'l Paper Selection}{11}{15} \\
-        \ganttbar{Report Drafting}{14}{15} \\
-        \ganttbar{Report Finalization}{15}{16} \\
-        \ganttbar{Review 2}{16}{16} \\
-        \ganttbar{Report Submission}{17}{17}
+        \foreach \x in {1,...,5} {
+                \gantttitlelist{1,...,4}{1}
+            } \\
 
+        \ganttbar[bar/.style={fill=violet!66, draw=black}]{Literature Survey}{3}{5} \\
+        \ganttbar[bar/.style={fill=blue!66, draw=black}]{Base Paper Selection}{5}{6} \\
+        \ganttbar[bar/.style={fill=green!66, draw=black}]{Supp. Papers Selection}{7}{13} \\
+        \ganttbar[bar/.style={fill=yellow!66, draw=black}]{Report Drafting}{12}{15} \\
+        \ganttbar[bar/.style={fill=orange!66, draw=black}]{Report Finalization}{16}{16} \\
+        \ganttbar[bar/.style={fill=red!66, draw=black}]{Report Submission}{17}{18}
     \end{ganttchart}
 
-    \caption{Gantt Chart for Major Project Phase-1}
-
+    \caption{Gantt Chart for Major Project (Phase-1)}
 \end{figure}
+
+\section{Month-wise Progress}
+\subsection{January}
+Conducted a comprehensive literature survey to identify relevant research papers and technologies in the domain of real-time combat vision systems. Identified research papers that could serve as the base paper and foundation for our project.
+
+\subsection{February}
+Selected the base paper and conducted extensive reading and analysis to understand the current state of the art, identify gaps in existing solutions, and select a base paper that aligns with our project objectives.
+
+\subsection{March}
+Selected 10 supplementary papers that provide additional insights, methodologies, and technologies relevant to our project. These papers contribute to the development of our combat vision system by providing a broader understanding of the field and potential approaches to implementation. Began intial work to draft the project report.
+
+\subsection{April}
+Drafted the project report, synthesizing information from the base paper and supplementary papers. Structured the report to clearly articulate the project details and specifications. Iteratively refined the report based on feedback and additional insights gained during the drafting process and drafted the final project report.
+
+\subsection{May}
+
+Submitted the finalized project report, ensuring that all sections are complete, well-organized, and adhere to the required guidelines.
