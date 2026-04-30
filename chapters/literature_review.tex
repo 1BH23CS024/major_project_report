@@ -78,63 +78,156 @@ missions. \\
 
 \textbf{Results:} UniFusOD outperformed several state-of-the-art models on multiple datasets. Better Detection: Improved mAP by 0.8 (DroneVehicle) and 1.9 (M3FD). Superior Fusion: Produced images with higher information content and better structure. Robust Performance: Particularly effective at detecting small targets in complex environments.
 
+\subsection{An Efficient and Lightweight Deep Learning Model for Human Activity Recognition Using Smartphones}
+
+\textbf{Authors:} A. Ankita, S. Rani, H. Babbar, S. Coleman, A. Singh, and H. M. Aljahdali \\
+\textbf{Journal:} Sensors \\
+\textbf{Published:} June 2021 \\
+\textbf{DOI:} 10.3390/s21113845 \\
+
+\textbf{Summary:} Presents an efficient and lightweight deep learning model for recognizing human activities using smartphone sensors. It addresses the limitations of traditional pattern recognition by using automated feature extraction, which is essential for applications in healthcare, elderly monitoring, and sports science. \\
+
+\textbf{Methodology:} The proposed CNN-LSTM architecture combines convolutional layers for automated feature extraction with LSTM units for processing temporal sequences. The model was trained using the UCI-HAR dataset from Samsung Galaxy S2 smartphones, employing Gaussian standardization to preprocess raw accelerometer and gyroscope signals. \\
+
+\textbf{Results:} UThe CNN-LSTM model achieved a high recognition accuracy of 97.89\%. It proved to be more robust and capable than traditional algorithms, demonstrating that combining spatial feature learning with temporal sequence interpretation effectively identifies activities like walking, sitting, and standing while remaining lightweight for mobile deployment.
+
+\subsection{Detection and classification of different weapon types using deep learning}
+
+\textbf{Authors:} V. Kaya, S. Tuncer, and A. Baran \\
+\textbf{Journal:} Applied Sciences \\
+\textbf{Published:} August 2021 \\
+\textbf{DOI:} 10.3390/app11167535 \\
+
+\textbf{Summary:} Proposes a deep learning model for the automatic detection and classification of seven distinct handheld weapon types. It aims to support security forces by providing a proactive control system that can identify threatening objects in real-time surveillance to prevent criminal activities. \\
+
+\textbf{Methodology:} Based on the VGGNet architecture, the proposed CNN model uses 25 layers and 337,671 parameters. A new dataset of 5,214 images (assault rifles, pistols, grenades, etc.) was curated from the internet and preprocessed using gray formatting and background cleaning for training via the Keras library. \\
+
+\textbf{Results:} The model achieved 98.40\% classification accuracy, significantly outperforming VGG-16 (89.75\%), ResNet50 (93.70\%), and ResNet-101 (83.33\%). It successfully identified weapons with low loss rates (0.052), proving highly effective for real-world deployment on low-cost computers due to its reduced layer complexity and fast training time.
+
+\subsection{Review of models for estimating 3D human pose using deep learning}
+
+\textbf{Authors:} S. Salisu, K. U. Danyaro, M. Nasser, I. M. Hayder, and H. A. Younis \\
+\textbf{Journal:} PeerJ Computer Science \\
+\textbf{Published:} February 2025 \\
+\textbf{DOI:} 10.7717/peerj-cs.2574 \\
+
+\textbf{Summary:} Evaluates the latest deep learning-based models for 3D human pose estimation (HPE). It explores the evolution from 2D to 3D positioning of articulated joints, highlighting key industrial applications in healthcare telerehabilitation, security surveillance, gaming, and action recognition. \\
+
+\textbf{Methodology:} Researchers followed the PRISMA protocol to systematically search Scopus, Web of Science, and IEEE databases for articles published between 2014 and 2024. They assessed 30 leading studies based on neural network architectures, benchmark datasets (like Human 3.6M), and metrics like Mean Per Joint Position Error. \\
+
+\textbf{Results:} The review found that while deep learning has significantly advanced 3D HPE, major challenges persist in handling occlusion and real-time processing. Findings emphasize the success of multi-view and sensor-fusion techniques, providing a roadmap for future research toward more robust, generalized models for complex environments.
+
+\subsection{PDGV-DETR: Object detection for secure on-site weapon and personnel location based on dynamic convolution and cross-scale semantic fusion}
+
+\textbf{Authors:} N.Li,P.Xin,J.Tian,X.Bai,H.Ding,Z.Xiao,andQ.Liu \\
+\textbf{Journal:} Remote Sensing \\
+\textbf{Published:} February 2026 \\
+\textbf{DOI:} 10.3390/s26051542 \\
+
+\textbf{Summary:} : Proposes PDGV-DETR, a framework for precise weapon and personnel detection in static security surveillance images. It addresses challenges like object occlusion and complex backgrounds, which often cause general detection models to fail in public safety scenarios such as school or subway monitoring. \\
+
+\textbf{Methodology:} Themodel optimizes detection through three units: a dynamic hierarchical channel interaction convolution module for occluded objects, an improved bidirectional hybrid feature pyramid network for cross-scale fusion, and a global semantic weaving network to better distinguish objects from complex backgrounds in static images. \\
+
+\textbf{Results:} PDGV-DETR achieved a peak mAP$_{50}$ of 85.9\% on conflict scene datasets and 93.0\% on weapon-specific datasets. It demonstrated a statistically significant improvement over RT-DETR and DeformableDETR, balancing  high positioning accuracy with computational efficiency for real-time video surveillance applications.
+
+\subsection{Edge-optimized threat detection with Florence v2 for autonomous surveillance in resource-constrained environments}
+
+\textbf{Authors:} C. Konar, D. Das, D. S., K. Jc, and S. Singh \\
+\textbf{Journal:} PeerJ Computer Science \\
+\textbf{Published:} March 2026 \\
+\textbf{DOI:} 10.7717/peerj-cs.3579 \\
+
+\textbf{Summary:} Introduces a portable, edge-optimized surveillance system designed to detect modern security threats like hidden weapons and drones. By leveraging the Florence v2 Vision-Language Transformer, it aims to provide militarygrade object detection in resource-constrained environments like remote borders or civilian infrastructure. \\
+
+\textbf{Methodology:} Researchers adapted the Florence v2 model using Parameter Efficient Fine-Tuning (PEFT) and LowRank Adaptation (LoRA). The system was trained on 12,000 images, including GAN-generated synthetic data, and deployed on a Raspberry Pi 5 with an ESP32-S2 module for wireless alerts via the ESP-NOW protocol. \\
+
+\textbf{Results:} The final model achieved 88.01\% accuracy, outperforming YOLOv8 and FRCNN. It attained a mAP$_{50}$ score of 64.83 while maintaining high efficiency on edge hardware, utilizing only 38.4\% of the Raspberry Pi's RAM and 50.9\% of its CPU power per 16.6ms frame.
+
+
 \pagebreak
 \section{Comparison Table}
 \renewcommand{\arraystretch}{1.5}
 \begin{longtable}{p{1.21cm} p{3cm} p{3cm} p{3cm} p{3cm}}
-    \caption{Work Distribution Among Team Members}                                                                                                                                                                                   \\
+    \caption{Comparison Table of Research Papers}                                                                                                                                                                                                                 \\
 
     \toprule
-    \textbf{Sl. No.}                                                                                                                         & \textbf{Paper Title} & \textbf{Objective} & \textbf{Methodology} & \textbf{Core Idea} \\
+    \textbf{Sl. No.}                                                                                                                                    & \textbf{Paper Title}                   & \textbf{Objective} & \textbf{Methodology} & \textbf{Core Idea} \\
     \midrule
     \endfirsthead
 
     \toprule
-    \textbf{Sl. No.}                                                                                                                         & \textbf{Paper Title} & \textbf{Objective} & \textbf{Methodology} & \textbf{Core Idea} \\
+    \textbf{Sl. No.}                                                                                                                                    & \textbf{Paper Title}                   & \textbf{Objective} & \textbf{Methodology} & \textbf{Core Idea} \\
     \midrule
     \endhead
 
     \midrule
-    \multicolumn{5}{r}{\textit{Continued on next page}}                                                                                                                                                                              \\
+    \multicolumn{5}{r}{\textit{Continued on next page}}                                                                                                                                                                                                           \\
     \midrule
     \endfoot
 
     \bottomrule
     \endlastfoot
 
-    \cite{base_paper}                                                                                                                        &
-    Military target detection method based on EfficientDet and Generative Adversarial Network                                                &
-    To detect targets in low visibility, noisy, or data-scarce combat zones                                                                  &
-    EfficientDet-D0 + Dual-Discriminator GAN                                                                                                 &
-    Uses GANs to generate synthetic military training data and BiFPN for feature fusion                                                                                                                                              \\
+    \cite{base_paper}                                                                                                                                   &
+    Military target detection method based on EfficientDet and Generative Adversarial Network                                                           &
+    To detect targets in low visibility, noisy, or data-scarce combat zones                                                                             &
+    EfficientDet-D0 + Dual-Discriminator GAN                                                                                                            &
+    Uses GANs to generate synthetic military training data and BiFPN for feature fusion                                                                                                                                                                           \\
 
-    \cite{supplementary_paper_1}                                                                                                             &
-    Real-Time Versatile Object Detection With High Accuracy and Reduced Information Loss During Wartime                                      &
-    To detect unseen or new battlefield threats without manual re-labeling                                                                   &
-    CLIP Encoder + Modified C2f-Darknet                                                                                                      &
-    Uses pseudo-boundary labeling for zero-shot detection and combines vision and language                                                                                                                                           \\
+    \cite{supplementary_paper_1}                                                                                                                        &
+    Real-Time Versatile Object Detection With High Accuracy and Reduced Information Loss During Wartime                                                 &
+    To detect unseen or new battlefield threats without manual re-labeling                                                                              &
+    CLIP Encoder + Modified C2f-Darknet                                                                                                                 &
+    Uses pseudo-boundary labeling for zero-shot detection and combines vision and language                                                                                                                                                                        \\
 
-    \cite{supplementary_paper_2}                                                                                                             &
-    EDNet: Edge-Optimized Small Target Detection in UAV Imagery — Faster Context Attention, Better Feature Fusion, and Hardware Acceleration &
-    To enable high-speed detection of tiny objects on low-power drone hardware                                                               &
-    YOLOv10 + Faster Context Attention (C2fFCA)                                                                                              &
-    Uses XSmall detection layer for small object detection with hardware acceleration optimizations                                                                                                                                  \\
+    \cite{supplementary_paper_2}                                                                                                                        &
+    EDNet: Edge-Optimized Small Target Detection in UAV Imagery — Faster Context Attention, Better Feature Fusion, and Hardware Acceleration            &
+    To enable high-speed detection of tiny objects on low-power drone hardware                                                                          &
+    YOLOv10 + Faster Context Attention (C2fFCA)                                                                                                         &
+    Uses XSmall detection layer for small object detection with hardware acceleration optimizations                                                                                                                                                               \\
 
-    \cite{supplementary_paper_3}                                                                                                             &
-    Multi-modal action recognition via advanced image fusion techniques for cyber-physical systems                                           &
-    To recognize human/combatant actions accurately even if one sensor fails                                                                 &
-    MSAF-Net (Multi-Scale Attention-Guided Fusion)                                                                                           &
-    Dynamically prioritizes sensor data and switches to backup sensors when needed                                                                                                                                                   \\
+    \cite{supplementary_paper_3}                                                                                                                        &
+    Multi-modal action recognition via advanced image fusion techniques for cyber-physical systems                                                      &
+    To recognize human/combatant actions accurately even if one sensor fails                                                                            &
+    MSAF-Net (Multi-Scale Attention-Guided Fusion)                                                                                                      &
+    Dynamically prioritizes sensor data and switches to backup sensors when needed                                                                                                                                                                                \\
 
-    \cite{supplementary_paper_4}                                                                                                             &
-    Static early fusion techniques for visible and thermal images to enhance convolutional neural network detection: A performance analysis  &
-    To find the most efficient way to merge RGB and infrared data for robots                                                                 &
-    YOLOv8 + Early Fusion                                                                                                                    &
-    Compresses 4-channel data into 3-channel for efficiency processing and uses CLAHE for contrast enhancement                                                                                                                       \\
+    \cite{supplementary_paper_4}                                                                                                                        &
+    Static early fusion techniques for visible and thermal images to enhance convolutional neural network detection: A performance analysis             &
+    To find the most efficient way to merge RGB and infrared data for robots                                                                            &
+    YOLOv8 + Early Fusion                                                                                                                               &
+    Compresses 4-channel data into 3-channel for efficiency processing and uses CLAHE for contrast enhancement                                                                                                                                                    \\
 
-    \cite{supplementary_paper_5}                                                                                                             &
-    Infrared-visible image fusion meets object detection: Towards unified optimization for multimodal perception                             &
-    To solve gradient conflicts when training fusion and detection together                                                                  &
-    UniFusOD                                                                                                                                 &
-    Use Fine-Grained Region Attention (FRA) mechanism and unified framework to fuse RGB and infrared images for accurate detection                                                                                                   \\
+    \cite{supplementary_paper_5}                                                                                                                        &
+    Infrared-visible image fusion meets object detection: Towards unified optimization for multimodal perception                                        &
+    To solve gradient conflicts when training fusion and detection together                                                                             &
+    UniFusOD                                                                                                                                            &
+    Use Fine-Grained Region Attention (FRA) mechanism and unified framework to fuse RGB and infrared images for accurate detection                                                                                                                                \\
+
+    \cite{supplementary_paper_6}                                                                                                                        &
+    An Efficient and Lightweight Deep Learning Model for Human Activity Recognition Using Smartphones                                                   &
+    To develop an efficient and lightweight model for identifying human activities using smartphone-based sensor data                                   & CNN + Long Short-Term Memory (LSTM)    &
+    Integrating spatial and temporal deep learning architectures to automate feature extraction from raw sensor data                                                                                                                                              \\
+
+    \cite{supplementary_paper_7}                                                                                                                        &
+    Detection and Classification of Different Weapon Types Using Deep Learning                                                                          &
+    To propose a model for the automatic detection and classification of distinct types of handheld weapons                                             & CNN based on VGGNet architecture       &
+    Utilizing reduced layer complexity and highprecision CNNs to enable weapon identification on low-cost computing systems                                                                                                                                       \\
+
+    \cite{supplementary_paper_8}                                                                                                                        &
+    Review of models for estimating 3D human pose using deep learning                                                                                   &
+    To provide a comprehensive review of the latest 3D human pose estimation (HPE) models, datasets, and evaluation metrics                             &
+    PRISMA protocol                                                                                                                                     &
+    Assessing the human poses from 2D to 3D positioning of joints                                                                                                                                                                                                 \\
+
+    \cite{supplementary_paper_9}                                                                                                                        &
+    PDGV-DETR: Object Detection for Secure On-Site Weapon and Personnel Location                                                                        &
+    To precisely detect and position weapons and personnel in static surveillance images while overcoming occlusion and complex background interference &
+    PDGV-DETR framework                                                                                                                                 &
+    Implementing a transformerbased end-to-end detection system that uses cross-scale semantic fusion to bridge the gap between high-level semantics and low-level image details                                                                                  \\
+
+    \cite{supplementary_paper_10}                                                                                                                       &
+    Edge-optimized threat detection with Florence v2                                                                                                    &
+    To create a portable, edgeoptimized surveillance system capable of detecting military-relevant threat classes in resourceconstrained environments   & Florence v2 VisionLanguage Transformer &
+    Leveraging multimodal vision-language models on compact edge hardware to provide military-grade situational awareness without relying on cloud infrastructure                                                                                                 \\
 \end{longtable}

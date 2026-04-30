@@ -36,19 +36,20 @@ Specific objectives for the project include:
 \end{enumerate}
 
 \section{Methodology}
+The project adopts a hybrid deep-learning approach that integrates generative data augmentation with edge-optimized multimodal fusion. Initially, the system utilizes a Generative Adversarial Network (GAN) to synthesize high-quality military training data, addressing scarcity in combat-specific datasets. For real-time execution, the project implements a lightweight detection architecture, such as EfficientDet or YOLOv10, optimized for low-latency performance on edge devices like smartphones or Raspberry Pi. To ensure reliability in varying field conditions, the methodology incorporates multimodal image fusion, specifically merging RGB texture with Infrared (thermal) edge data using a fine-grained region attention mechanism. This ensures robust target classification even during night operations or in cluttered environments. Furthermore, the system leverages a vision-language model (like Florence v2) for zero-shot detection, allowing the identification of "unseen" or novel threats through natural language supervision. Post-detection, the pipeline filters data and applies an Augmented Reality (AR) overlay to highlight threats instantly, while securing all mission metadata in a local storage layer for subsequent auditing.
 
 \section{Sustainable Development Goal Relevance}
 The project aligns with United Nations Sustainable Development Goal 16: Peace, Justice, and Strong Institutions.
 
-\subsection{Target 16.1: Significantly reduce all forms of violence and related death rates everywhere}
+\textbf{Target 16.1: Significantly reduce all forms of violence and related death rates everywhere}
 
-VeerDrishti will enhance battlefield situational awareness by detecting and tracking potential threats in real time. This capability will enable defense personnel to respond faster and make more informed decisions during combat situations. By improving awareness and reaction time, the system will help reduce operational risks and potentially decrease casualties.
+VeerDrishti will enhance battlefield situational awareness by detecting and tracking potential threats in real time. This capability will enable defense personnel to respond faster and make more informed decisions during combat situations. By improving awareness and reaction time, the system will help reduce operational risks and potentially decrease casualties. \\
 
-\subsection{Target 16.3: Promote the rule of law at the national and international levels and ensure equal access to justice for all}
+\textbf{Target 16.3: Promote the rule of law at the national and international levels and ensure equal access to justice for all}
 
-VeerDrishti will record visual data during operations, enabling improved mission analysis and operational review. It will support evidence-based evaluation of decisions made during missions. Such recorded data could also assist investigations related to violations of international humanitarian law, including potential war crimes.
+VeerDrishti will record visual data during operations, enabling improved mission analysis and operational review. It will support evidence-based evaluation of decisions made during missions. Such recorded data could also assist investigations related to violations of international humanitarian law, including potential war crimes. \\
 
-\subsection{Target 16.A: Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime}
+\textbf{Target 16.A: Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime}
 
 VeerDrishti will integrate AI-based detection and tracking technologies, strengthening the technological capacity of national security institutions. The project will support peacekeeping operations and the protection of national interests.
 

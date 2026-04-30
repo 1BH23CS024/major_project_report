@@ -2,7 +2,7 @@
 
 \usepackage[backend=biber, style=ieee]{biblatex}
 \usepackage[top=0.75in, bottom=0.75in, left=1.25in, right=1in, includehead]{geometry}
-\usepackage{array, booktabs, caption, enumitem, etoolbox, fancyhdr, fontspec, graphicx, longtable, pgfgantt, setspace, titlesec, xcolor}
+\usepackage{array, booktabs, caption, enumitem, etoolbox, fancyhdr, fontspec, graphicx, longtable, pgfgantt, setspace, tikz, titlesec, xcolor}
 
 % import references
 \addbibresource{references.bib}
@@ -18,7 +18,7 @@
 \fancyhf{}
 \fancyhead[L]{\fontsize{12pt}{0em}\textbf{VeerDrishti: Combat Vision System}}
 \fancyhead[R]{\fontsize{12pt}{0em}\textbf{2025--2026}}
-\fancyfoot[L]{\fontsize{12pt}{0em}\textbf{Dept. of CSE, Bangalore Technological Institute}}
+\fancyfoot[L]{\fontsize{12pt}{0em}\textbf{Dept. of CSE, BTI, Bengaluru}}
 \fancyfoot[R]{\fontsize{12pt}{0em}\textbf{\thepage}}
 
 \renewcommand{\headrulewidth}{0pt}
@@ -75,7 +75,7 @@
 % document content
 \begin{document}
 
-\tableofcontents
+% \tableofcontents
 
 \include{chapters/introduction}
 \include{chapters/literature_review}
@@ -86,7 +86,7 @@
 
 \printbibliography[heading=bibintoc, title={REFERENCES}]
 
-\addcontentsline{toc}{chapter}{GLOSSARY}
-\include{chapters/glossary}
+% \addcontentsline{toc}{chapter}{GLOSSARY}
+% \include{chapters/glossary}
 
 \end{document}
